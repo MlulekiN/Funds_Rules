@@ -1,0 +1,10 @@
+﻿public static By dropDownList = By.XPath("//div[@class='sm1-triggers']/child::div[contains(@id,'sm1combo')]
+
+IWebElement textTab = Wait.Until(ExpectedConditions.ElementIsVisible(Elements.textTab));
+            textTab.Click();
+            textTab.SendKeys("629 - KPI");
+
+              DateTime date = DateTime.Today;
+            string datePick = "04/2022";
+            var month = date.Month;
+            var year = date.Year;
