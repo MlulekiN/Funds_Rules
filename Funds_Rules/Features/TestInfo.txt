@@ -8,3 +8,12 @@ IWebElement textTab = Wait.Until(ExpectedConditions.ElementIsVisible(Elements.te
             string datePick = "04/2022";
             var month = date.Month;
             var year = date.Year;
+
+
+            Configuration ID:
+            Product Groups:
+            Customer level:
+            Contractor:
+
+            
+       
