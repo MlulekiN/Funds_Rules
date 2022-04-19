@@ -148,7 +148,11 @@ namespace Funds_Rules.Steps
         [When(@"User selects the sell in period (.*)")]
         public void WhenUserSelectsTheSellInPeriod(string sellInDate)
         {
+<<<<<<< HEAD
             string date = "17/Apr/2022";
+=======
+            string date = "21/Apr/2022";
+>>>>>>> 8d2f3a23eaf78a9ffe0389df9ae28b6d42744510
             string expectdateDay = date.Split("/")[0];
             string expectdateMonth = date.Split("/")[1];
             string expectdateYear = date.Split("/")[2];
@@ -157,12 +161,18 @@ namespace Funds_Rules.Steps
             selectDate.Click();
             IWebElement selectMonth = driver.FindElement(Elements.monthSelect);
             selectMonth.Click();
+<<<<<<< HEAD
             Wait.Until(ExpectedConditions.ElementIsVisible(Elements.SpecificDateMonth(expectdateMonth))).Click();
             driver.FindElement(Elements.specificDateYear(expectdateYear)).Click();
+=======
+            driver.FindElement(Elements.specificDate(expectdateMonth)).Click();
+            driver.FindElement(Elements.specificDate(expectdateYear)).Click();
+>>>>>>> 8d2f3a23eaf78a9ffe0389df9ae28b6d42744510
             driver.FindElement(Elements.innerMonthOkButton).Click();
             driver.FindElement(Elements.selectDay(expectdateDay)).Click();
             driver.FindElement(By.XPath("//span[text()='OK']/parent::span")).Click();
         }
+<<<<<<< HEAD
         [When(@"sell out date ""(.*)""")]
         public void WhenSellOutDate(string sellOut)
         {
@@ -184,6 +194,8 @@ namespace Funds_Rules.Steps
 
         }
 
+=======
+>>>>>>> 8d2f3a23eaf78a9ffe0389df9ae28b6d42744510
 
         [When(@"User clicks on product groups drop down list")]
         public void WhenUserClicksOnProductGroupsDropDownList()
@@ -191,6 +203,7 @@ namespace Funds_Rules.Steps
             driver.FindElement(Elements.productDownList).Click();
         }
 
+<<<<<<< HEAD
         [When(@"User selects the product and clicks the ok button")]
         public void WhenUserSelectsTheProductAndClicksTheOkButton()
         {
@@ -204,5 +217,7 @@ namespace Funds_Rules.Steps
             driver.FindElement(Elements.saveButton).Click();
         }
 
+=======
+>>>>>>> 8d2f3a23eaf78a9ffe0389df9ae28b6d42744510
     }
 }

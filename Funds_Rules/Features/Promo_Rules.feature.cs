@@ -127,6 +127,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("User selects on the customer level \'5 - Level 5\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 19
+<<<<<<< HEAD
  testRunner.And("User selects the sell in period \"01/04/2022\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 20
@@ -141,6 +142,13 @@ this.ScenarioInitialize(scenarioInfo);
 #line 23
  testRunner.And("User clicks the save button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
+=======
+ testRunner.And("User selects the sell in period 01/04/2022", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 20
+ testRunner.And("User clicks on product groups drop down list", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+>>>>>>> 8d2f3a23eaf78a9ffe0389df9ae28b6d42744510
             }
             this.ScenarioCleanup();
         }

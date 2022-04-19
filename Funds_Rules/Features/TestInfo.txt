@@ -8,6 +8,7 @@ IWebElement textTab = Wait.Until(ExpectedConditions.ElementIsVisible(Elements.te
             string datePick = "04/2022";
             var month = date.Month;
             var year = date.Year;
+<<<<<<< HEAD
 
 
             Configuration ID:
@@ -17,3 +18,5 @@ IWebElement textTab = Wait.Until(ExpectedConditions.ElementIsVisible(Elements.te
 
             
        
+=======
+>>>>>>> 8d2f3a23eaf78a9ffe0389df9ae28b6d42744510

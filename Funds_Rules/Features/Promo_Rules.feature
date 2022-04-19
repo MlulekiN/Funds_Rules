@@ -16,9 +16,14 @@ Scenario: The user needs to configure the funds and rules and add a promo
 	And User waits for the page to load
 	And User clicks on customer level dropdown list until '5 - Level 5' is displayed
 	And User selects on the customer level '5 - Level 5'
+<<<<<<< HEAD
 	And User selects the sell in period "01/04/2022"
 	And sell out date "30/04/2022"
 	And User clicks on product groups drop down list 
 	And User selects the product and clicks the ok button
 	And User clicks the save button
+=======
+	And User selects the sell in period 01/04/2022
+	And User clicks on product groups drop down list 
+>>>>>>> 8d2f3a23eaf78a9ffe0389df9ae28b6d42744510
 		 
