@@ -20,3 +20,27 @@ IWebElement textTab = Wait.Until(ExpectedConditions.ElementIsVisible(Elements.te
        
 =======
 >>>>>>> 8d2f3a23eaf78a9ffe0389df9ae28b6d42744510
+
+//span[text()='Business Rules']
+
+//span[contains(@class,'toolbar-refresh ')]/ancestor::a
+
+//div[@sm1-id='NavigatorGridToolbar']/descendant::span[@sm1-id='AddButton']
+
+
+public string url = "https://to-pdi.salesperformanceplatform.com/xtelsp-automhfx/web/SM1V6/SM1.aspx?DBG=1";
+
+ ChromeOptions options = new ChromeOptions();
+            var userProfile = @"%UserProfile%\AppData\Local\Google\Chrome\User Data\Profile 2";
+            options.AddArgument("--profile-directory=Profile 2");
+
+            driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromSeconds(180));
+            Wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
+            driver.Navigate().GoToUrl(url);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
+            driver.Manage().Window.Maximize();
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(300))
+            {
+                PollingInterval = TimeSpan.FromMilliseconds(500)
+            };
+            wait.IgnoreExceptionTypes(typeof(TimeoutException), typeof(NoSuchElementException));
