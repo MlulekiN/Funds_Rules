@@ -1,4 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Funds_Rules.Drivers
+{
+    class README
+    { using System;
 using System.Threading;
 using NUnit.Framework;
 using OpenQA.Selenium;
@@ -336,5 +343,8 @@ namespace Funds_Rules.Steps
         {
             driver.FindElement(Elements.editButton).Click();
         }
+    }
+}
+
     }
 }
